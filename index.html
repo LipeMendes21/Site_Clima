@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Weather forecast</title>
+    
+</head>
+<body>
+
+    <div id="container">
+
+        <form id="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" id="city_name" placeholder="Buscar a cidade">
+
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <div id="weather">
+
+            <h1 id="tittle">Mauá, BR </h1>
+
+            <div id="infos">
+                <div id="temp">
+                    <img  id="temp_img" src="https://openweathermap.org/img/wn/04d@2x.png" alt="">
+                    <div>
+                        <p id="temp_value">
+                            32 
+                        </p>
+                        <p id="temp_description">
+                            Ensolarado
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="other_infos">
+            <div class="info">
+                <i id="temp_max_icon" class="fa-solid fa-temperature-arrow-up"></i>
+                <div>
+                    <h2>
+                        Temp. Max
+                    </h2>
+                    <p id="temp_max">
+                        32  
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="info">
+                <i id="temp_min_icon" class="fa-solid fa-temperature-arrow-down"></i>
+                <div>
+                    <h2>
+                        Temp. Min
+                    </h2>
+                    <p id="temp_min">
+                        12 
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="info">
+                <i id="umidade_icon" class="fa-solid fa-droplet"></i>
+                <div>
+                    <h2>
+                        Umidade
+                    </h2>
+                    <p id="umidade">
+                        50
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="info">
+                <i id="vento_icon" class="fa-solid fa-wind"></i>
+                <div>
+                    <h2>
+                        Vento
+                    </h2>
+                    <p id="vento">
+                        50 km/h
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+     </div>
+
+     <div id="alert"></div>
+
+    </div>
+    
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>
